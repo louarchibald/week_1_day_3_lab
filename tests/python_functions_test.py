@@ -14,21 +14,21 @@ class TestPythonFunctionPractice(unittest.TestCase):
       self.assertEqual( 3, add_result )
 
   
-#   def test_subtract(self):
-#       subtract_result = subtract( 10, 5 )
-#       self.assertEqual( 5, subtract_result )
+  def test_subtract(self):
+      subtract_result = subtract( 10, 5 )
+      self.assertEqual( 5, subtract_result )
 
  
   def test_multiply(self):
       multiply_result = multiply( 4, 2 )
       self.assertEqual( 8, multiply_result )
 
-  @unittest.skip("delete this line to run the test")
-  def test_divide(self):
-      divide_result = divide( 10, 2 )
-      self.assertEqual( 5, divide_result )
+  
+#   def test_divide(self):
+#       divide_result = divide( 10, 2 )
+#       self.assertEqual( 5, divide_result )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_length_of_string(self):
       test_string = "A string of length 21"
       string_length = length_of_string( test_string )
@@ -41,7 +41,7 @@ class TestPythonFunctionPractice(unittest.TestCase):
       joined_string = join_string( string_1, string_2 )
       self.assertEqual( "Mary had a little lamb, its fleece was white as snow", joined_string )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_add_string_as_number(self):
       add_result = add_string_as_number( "1", "2" )
       self.assertEqual( 3, add_result )
@@ -51,7 +51,7 @@ class TestPythonFunctionPractice(unittest.TestCase):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
 
-  @unittest.skip("delete this line to run the test")
+  
   def test_number_to_full_name__month_3(self):
       result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
